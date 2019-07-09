@@ -1,0 +1,22 @@
+[push]
+	default = simple
+[core]
+	excludesfile = ~/.gitignore_global
+	editor = vim
+[rerere]
+	enabled = true
+[alias]
+	ck = checkout
+	br = branch
+	cm = commit
+	rbo = rebase origin/master
+	fom = fetch origin master
+	all = add --all
+	rc = !git add --all && git rebase --continue
+	cma = commit -a --amend --no-edit
+	st = status
+	df = diff
+	pi = push -f izgzhen
+	wdiff = diff --word-diff=color
+	pom = push origin master
+	upload = !git add --all && git commit -m "update" && git push
